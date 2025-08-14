@@ -144,8 +144,11 @@ inline void Ispit<T>::Ucitaj(const char* fajl)
 
 	if (ulaz.good())
 	{
+		tr = 0;
 		ulaz >> uk;
 		ulaz >> tr;
+		delete[] niz;
+		niz = new T[uk];
 		for (int i = 0; i < tr; i++)
 		{
 			ulaz >> niz[i]; //operator>>

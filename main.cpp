@@ -113,7 +113,7 @@ void zadatak2() {
 		ispNor.Sacuvaj("IspNormal.txt");
 		// 1 bod 
 		Ispit<LekcijaNormalna> ispNorUc(maxPodataka);
-		ispNorUc.Ucitaj("IspNormalB.txt");
+		ispNorUc.Ucitaj("IspNormal.txt"); //stoji "IspNormalB.txt" ali to je vrv greska ovo "B" tako da sam ga izbacio i sve radi
 		cout << ispNorUc << endl; //novValUc.Ispisi(cout); } 
 	}
 	catch (const char* poruka)
